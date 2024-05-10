@@ -19,7 +19,11 @@ public class Main {
         System.out.println("Acabaram os candidatos para essa vaga");
         SelecaoDeCandidatoa.selecaoDeCandidatos(candidatos, salariosPretendidos);
 
-
+        OrdenacaoDeCandidatos.ordenacaoDeCandidatos(candidatos,salariosPretendidos);
+        System.out.println("Candidatos escolhidos:");
+        for (int i = 0; i < 5; i++) { // Imprimir os 5 primeiros candidatos (os escolhidos)
+            System.out.println("Nome: " + candidatos[i] + ", Salário pretendido: " + salariosPretendidos[i]);
+        }
 
 
     }
